@@ -14,7 +14,7 @@ RUN go mod download
 COPY . .
 
 RUN go test -cover ./...
-RUN CGO_ENABLED=0 go build -a -tags netgo -installsuffix netgo -ldflags "-X github.com/halverneus/static-file-server/cli/version.version=${VERSION}" -o /serve /build/bin/serve
+RUN CGO_ENABLED=0 go build -a -tags netgo -installsuffix netgo -ldflags "-X github.com:ZonghaoWang/static-file-server/cli/version.version=${VERSION}" -o /serve /build/bin/serve
 
 ################################################################################
 ## DEPLOYMENT CONTAINER
