@@ -1,0 +1,6 @@
+debug: true
+folder: /home/jierui/
+port: 8081
+#referrers:
+#  - http://localhost
+#  - https://mydomain.com
